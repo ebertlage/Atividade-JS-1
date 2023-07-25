@@ -13,37 +13,37 @@
 
 
 ////ATIVIDADE 3
-let turma1 = [
-{
-    nome: "Pedro",
-    notas: [10,7,8]
- },
- {
-    nome: "Lucas",
-    notas: [7,5,9.4]
- }
-]
+// let turma1 = [
+// {
+//     nome: "Pedro",
+//     notas: [10,7,8]
+//  },
+//  {
+//     nome: "Lucas",
+//     notas: [7,5,9.4]
+//  }
+// ]
 
-const mediaTotalTurma = (turma) =>{
-    var nAluno = 0;
-    nome = turma[nAluno].nome;
-    notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
-    media = notasQtd / 3;
-    mediaPrimeiroAluno = media;
-    console.log("A nota média do aluno " + nome + " é " + media);
+// const mediaTotalTurma = (turma) =>{
+//     var nAluno = 0;
+//     nome = turma[nAluno].nome;
+//     notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
+//     media = notasQtd / 3;
+//     mediaPrimeiroAluno = media;
+//     console.log("A nota média do aluno " + nome + " é " + media);
 
-    var nAluno = 1;
-    nome = turma[nAluno].nome;
-    notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
-    media = notasQtd / 3;
-    mediaSegundoAluno = media;
-    console.log("A nota média do aluno " + nome + " é " + media);
+//     var nAluno = 1;
+//     nome = turma[nAluno].nome;
+//     notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
+//     media = notasQtd / 3;
+//     mediaSegundoAluno = media;
+//     console.log("A nota média do aluno " + nome + " é " + media);
     
-    mediaSala = (mediaPrimeiroAluno + mediaSegundoAluno) / 2
-    console.log("A nota média da sala é " + mediaSala);
-}
+//     mediaSala = (mediaPrimeiroAluno + mediaSegundoAluno) / 2
+//     console.log("A nota média da sala é " + mediaSala);
+// }
 
-mediaTotalTurma(turma1);
+// mediaTotalTurma(turma1);
 
 
 //ATIVIDADE 4
@@ -80,10 +80,31 @@ mediaTotalTurma(turma1);
 //    return a;
 //}
 //area(10, 20);
+
+
+
 //ATIVIDADE 7 // VERIFICAR SE UM NUMERO É PRIMO
 
+let numero = 20;
+let contador = numero;
+let primo = 0;
 
+do{
+    if(numero % contador ==0){
+        primo++
+    }
 
+    contador--
+}while(contador > 0)
+
+if(primo == 2){
+    //é primo
+    console.log(numero + " é primo");
+}
+else {
+    //não é primo
+    console.log(numero+ " não é primo");
+}
 
 //ATIVIDADE 8 // CALCULAR O DESCONTO EM UM PRODUTO
 //FUNÇÃO: RECEBE O PRECO DO PRODUTO E O % DE DESCONTO.    // RETORNA O PREÇO COM DESCONTO
