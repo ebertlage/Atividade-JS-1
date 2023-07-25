@@ -12,18 +12,40 @@
 //console.log(nomeCidadao(pessoa));
 
 
-////ATIVIDADE 3                  INCOMPLETA
-let aluno = {
-   nome: "Pedro",
-   nota1: 10,
-   nota2: 7, 
-   nota3: 8,
-   nota4: 5,
-   nota5: 3.5
-}
-const mediaTotalTurma = (turma) =>{
+////ATIVIDADE 3
+let turma1 = [
+{
+    nome: "Pedro",
+    notas: [10,7,8]
+ },
+ {
+    nome: "Lucas",
+    notas: [7,5,9.4]
+ }
+]
 
+const mediaTotalTurma = (turma) =>{
+    var nAluno = 0;
+    nome = turma[nAluno].nome;
+    notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
+    media = notasQtd / 3;
+    mediaPrimeiroAluno = media;
+    console.log("A nota média do aluno " + nome + " é " + media);
+
+    var nAluno = 1;
+    nome = turma[nAluno].nome;
+    notasQtd = turma[nAluno].notas[0] + turma[nAluno].notas[1] + turma[nAluno].notas[2];
+    media = notasQtd / 3;
+    mediaSegundoAluno = media;
+    console.log("A nota média do aluno " + nome + " é " + media);
+    
+    mediaSala = (mediaPrimeiroAluno + mediaSegundoAluno) / 2
+    console.log("A nota média da sala é " + mediaSala);
 }
+
+mediaTotalTurma(turma1);
+
+
 //ATIVIDADE 4
 //Número é PAR ou ÍMPAR?
 //function main(n){
